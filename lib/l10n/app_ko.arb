@@ -1,0 +1,48 @@
+{
+  "@@locale": "ko",
+
+  "introTitle": "인공지능 기반 뉴스 분석기",
+  "@introTitle": {
+    "description": "인트로 화면의 메인 타이틀"
+  },
+
+  "introSubTitle": "인공지능 기반 분석을 통해 무엇이 중요한지 파악합니다",
+  "@introSubTitle": {
+    "description": "인트로 화면 타이틀 하단에 표시되는 부제목"
+  },
+
+  "email": "이메일",
+  "@email": {
+    "description": "이메일 입력 필드 라벨"
+  },
+
+  "password": "비밀번호",
+  "@password": {
+    "description": "비밀번호 입력 필드 라벨"
+  },
+
+  "loginToStart": "로그인하고 시작하기",
+  "@loginToStart": {
+    "description": "로그인 버튼 텍스트"
+  },
+
+  "guestToStart": "게스트로 시작하기",
+  "@guestToStart": {
+    "description": "게스트 모드 시작 버튼 텍스트"
+  },
+
+  "or": "또는",
+  "@or": {
+    "description": "로그인 옵션 사이에 표시되는 구분 텍스트"
+  },
+
+  "noAccount": "계정이 없으신가요?",
+  "@noAccount": {
+    "description": "회원가입 안내 문구"
+  },
+
+  "signUp": "가입하기",
+  "@signUp": {
+    "description": "회원가입 버튼 텍스트"
+  }
+}

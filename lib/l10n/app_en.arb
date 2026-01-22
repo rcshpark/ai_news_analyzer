@@ -1,0 +1,48 @@
+{
+  "@@locale": "en",
+
+  "introTitle": "AI-Powered News Analyzer",
+  "@introTitle": {
+    "description": "Main title shown on the intro screen"
+  },
+
+  "introSubTitle": "AI-powered analysis to understand what matters",
+  "@introSubTitle": {
+    "description": "Subtitle under the intro title"
+  },
+
+  "email": "email",
+  "@email": {
+    "description": "Email input label"
+  },
+
+  "password": "password",
+  "@password": {
+    "description": "Password input label"
+  },
+
+  "loginToStart": "Login to get started",
+  "@loginToStart": {
+    "description": "Login button text"
+  },
+
+  "guestToStart": "Start as Guest",
+  "@guestToStart": {
+    "description": "Guest login button text"
+  },
+
+  "or": "or",
+  "@or": {
+    "description": "Separator text between login options"
+  },
+
+  "noAccount": "Don't have an account?",
+  "@noAccount": {
+    "description": "Text shown before sign up link"
+  },
+
+  "signUp": "sign up",
+  "@signUp": {
+    "description": "Sign up button text"
+  }
+}
