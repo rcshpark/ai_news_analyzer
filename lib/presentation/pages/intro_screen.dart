@@ -1,5 +1,10 @@
+import 'package:ai_news_analyzer/core/const/app_color_const.dart';
+import 'package:ai_news_analyzer/core/const/app_text_style_const.dart';
+import 'package:ai_news_analyzer/presentation/widgets/email_icon.dart';
+import 'package:ai_news_analyzer/presentation/widgets/lock_icon.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:go_router/go_router.dart';
 
 class IntroScreen extends StatelessWidget {
   const IntroScreen({super.key});
@@ -13,60 +18,56 @@ class IntroScreen extends StatelessWidget {
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: [Color(0xFF09090B), Color(0xFF18181B), Color(0xFF09090B)],
+            colors: [
+              AppColors.darkBackground1,
+              AppColors.darkBackground2,
+              AppColors.darkBackground1,
+            ],
           ),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            // Logo
             const SizedBox(height: 80),
-            // Title
             Text(
               AppLocalizations.of(context)!.introTitle,
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-              ),
+              style: AppTextStyles.introTitle,
             ),
-            // Subtitle
             Text(
               AppLocalizations.of(context)!.introSubTitle,
-              style: const TextStyle(color: Color(0xFF9F9FA9), fontSize: 14),
+              style: AppTextStyles.introSubtitle,
             ),
             const SizedBox(height: 50),
-            // Email Input
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24.0),
               child: TextField(
                 decoration: InputDecoration(
                   hintText: AppLocalizations.of(context)!.email,
-                  hintStyle: const TextStyle(color: Color(0xFF71717B)),
-                  prefixIcon: const Icon(
-                    Icons.email_outlined,
-                    color: Color(0xFF71717B),
+                  hintStyle: AppTextStyles.greyText,
+                  prefixIcon: const Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: EmailIcon(),
                   ),
                   filled: true,
-                  fillColor: const Color.fromRGBO(24, 24, 27, 0.6),
+                  fillColor: AppColors.darkBackground2_60,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(16),
                     borderSide: const BorderSide(
-                      color: Color(0xFF27272A),
+                      color: AppColors.borderColor,
                       width: 0.5,
                     ),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(16),
                     borderSide: const BorderSide(
-                      color: Color(0xFF27272A),
+                      color: AppColors.borderColor,
                       width: 0.5,
                     ),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(16),
                     borderSide: const BorderSide(
-                      color: Color(0xFF27272A),
+                      color: AppColors.borderColor,
                       width: 0.5,
                     ),
                   ),
@@ -81,31 +82,31 @@ class IntroScreen extends StatelessWidget {
                 obscureText: true,
                 decoration: InputDecoration(
                   hintText: AppLocalizations.of(context)!.password,
-                  hintStyle: const TextStyle(color: Color(0xFF71717B)),
-                  prefixIcon: const Icon(
-                    Icons.lock_outline,
-                    color: Color(0xFF71717B),
+                  hintStyle: AppTextStyles.greyText,
+                  prefixIcon: const Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: LockIcon(),
                   ),
                   filled: true,
-                  fillColor: const Color.fromRGBO(24, 24, 27, 0.6),
+                  fillColor: AppColors.darkBackground2_60,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(16),
                     borderSide: const BorderSide(
-                      color: Color(0xFF27272A),
+                      color: AppColors.borderColor,
                       width: 0.5,
                     ),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(16),
                     borderSide: const BorderSide(
-                      color: Color(0xFF27272A),
+                      color: AppColors.borderColor,
                       width: 0.5,
                     ),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(16),
                     borderSide: const BorderSide(
-                      color: Color(0xFF27272A),
+                      color: AppColors.borderColor,
                       width: 0.5,
                     ),
                   ),
@@ -118,23 +119,23 @@ class IntroScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 24.0),
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF004FFF),
+                  backgroundColor: AppColors.loginButtonBackground,
                   minimumSize: const Size(double.infinity, 52),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(16),
                   ),
-                  shadowColor: const Color.fromRGBO(43, 127, 255, 0.5),
+                  shadowColor: AppColors.blueShadow,
                   elevation: 10,
                 ),
                 onPressed: () {},
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Icon(Icons.flash_on, color: Colors.white),
+                    const Icon(Icons.flash_on, color: AppColors.white),
                     const SizedBox(width: 8),
                     Text(
                       AppLocalizations.of(context)!.loginToStart,
-                      style: const TextStyle(color: Colors.white, fontSize: 16),
+                      style: AppTextStyles.loginButtonText,
                     ),
                   ],
                 ),
@@ -147,18 +148,18 @@ class IntroScreen extends StatelessWidget {
               children: [
                 const Expanded(
                   child: Divider(
-                    color: Color(0xFF27272A),
+                    color: AppColors.borderColor,
                     indent: 24,
                     endIndent: 10,
                   ),
                 ),
                 Text(
                   AppLocalizations.of(context)!.or,
-                  style: const TextStyle(color: Color(0xFF71717B)),
+                  style: AppTextStyles.greyText,
                 ),
                 const Expanded(
                   child: Divider(
-                    color: Color(0xFF27272A),
+                    color: AppColors.borderColor,
                     indent: 10,
                     endIndent: 24,
                   ),
@@ -172,7 +173,10 @@ class IntroScreen extends StatelessWidget {
               child: OutlinedButton(
                 style: OutlinedButton.styleFrom(
                   minimumSize: const Size(double.infinity, 52),
-                  side: const BorderSide(color: Color(0xFF27272A), width: 0.5),
+                  side: const BorderSide(
+                    color: AppColors.borderColor,
+                    width: 0.5,
+                  ),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(16),
                   ),
@@ -183,15 +187,12 @@ class IntroScreen extends StatelessWidget {
                   children: [
                     Text(
                       AppLocalizations.of(context)!.guestToStart,
-                      style: const TextStyle(
-                        color: Color(0xFFD4D4D8),
-                        fontSize: 16,
-                      ),
+                      style: AppTextStyles.guestButtonText,
                     ),
                     const SizedBox(width: 8),
                     const Icon(
                       Icons.arrow_forward,
-                      color: Color(0xFFD4D4D8),
+                      color: AppColors.guestButtonText,
                       size: 16,
                     ),
                   ],
@@ -205,20 +206,15 @@ class IntroScreen extends StatelessWidget {
               children: [
                 Text(
                   AppLocalizations.of(context)!.noAccount,
-                  style: const TextStyle(color: Color(0xFF71717B)),
+                  style: AppTextStyles.greyText,
                 ),
                 GestureDetector(
                   onTap: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //     builder: (context) => const SignUpScreen(),
-                    //   ),
-                    // );
+                    GoRouter.of(context).push('/signup');
                   },
                   child: Text(
                     AppLocalizations.of(context)!.signUp,
-                    style: const TextStyle(color: Color(0xFF51A2FF)),
+                    style: AppTextStyles.accentBlueText,
                   ),
                 ),
               ],
