@@ -27,14 +27,17 @@ class IntroScreen extends StatelessWidget {
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             const SizedBox(height: 80),
             Text(
               AppLocalizations.of(context)!.introTitle,
+              textAlign: TextAlign.center,
               style: AppTextStyles.introTitle,
             ),
             Text(
               AppLocalizations.of(context)!.introSubTitle,
+              textAlign: TextAlign.center,
               style: AppTextStyles.introSubtitle,
             ),
             const SizedBox(height: 50),
@@ -75,7 +78,6 @@ class IntroScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            // Password Input
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24.0),
               child: TextField(
