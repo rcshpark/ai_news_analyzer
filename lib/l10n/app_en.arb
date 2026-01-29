@@ -44,5 +44,65 @@
   "signUp": "sign up",
   "@signUp": {
     "description": "Sign up button text"
+  },
+
+  "continueWithGoogle": "Continue with Google",
+  "@continueWithGoogle": {
+    "description": "Continue with Google button text"
+  },
+
+  "continueWithGithub": "Continue with Github",
+  "@continueWithGithub": {
+    "description": "Continue with Github button text"
+  },
+
+  "signUpWithEmail": "or sign up with email",
+  "@signUpWithEmail": {
+    "description": "Sign up with email separator text"
+  },
+
+  "name": "Name",
+  "@name": {
+    "description": "Name input label"
+  },
+
+  "confirmPassword": "Confirm Password",
+  "@confirmPassword": {
+    "description": "Confirm password input label"
+  },
+
+  "termsAndConditions": "Terms and Conditions",
+  "@termsAndConditions": {
+    "description": "Terms and Conditions link text"
+  },
+
+  "and": " and ",
+  "@and": {
+    "description": "Conjunction between terms and privacy policy"
+  },
+
+  "privacyPolicy": "Privacy Policy",
+  "@privacyPolicy": {
+    "description": "Privacy Policy link text"
+  },
+
+  "agreeTo": "I agree to the ",
+  "@agreeTo": {
+    "description": "Text before terms and conditions"
+  },
+
+  "signUpButton": "Sign Up",
+  "@signUpButton": {
+    "description": "Sign up button text"
+  },
+
+  "alreadyHaveAccount": "Already have an account? ",
+  "@alreadyHaveAccount": {
+    "description": "Text before login link"
+  },
+
+  "login": "Log in",
+  "@login": {
+    "description": "Login link text"
   }
 }
