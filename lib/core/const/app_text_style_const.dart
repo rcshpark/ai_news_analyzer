@@ -2,31 +2,60 @@ import 'package:ai_news_analyzer/core/const/app_color_const.dart';
 import 'package:flutter/material.dart';
 
 class AppTextStyles {
+  static const TextStyle eyebrow = TextStyle(
+    color: AppColors.accentBlue,
+    fontSize: 12,
+    fontWeight: FontWeight.w600,
+    letterSpacing: 1.2,
+  );
+
   static const TextStyle introTitle = TextStyle(
     color: AppColors.white,
-    fontSize: 30,
-    fontWeight: FontWeight.bold,
+    fontSize: 32,
+    fontWeight: FontWeight.w700,
+    height: 1.15,
+    letterSpacing: -0.9,
   );
 
   static const TextStyle introSubtitle = TextStyle(
-    color: AppColors.greyText2,
-    fontSize: 14,
+    color: AppColors.greyText3,
+    fontSize: 15,
+    height: 1.55,
   );
 
   static const TextStyle loginButtonText = TextStyle(
     color: AppColors.white,
     fontSize: 16,
+    fontWeight: FontWeight.w600,
   );
 
-  static const TextStyle greyText = TextStyle(color: AppColors.greyText1);
+  static const TextStyle greyText = TextStyle(
+    color: AppColors.greyText1,
+    fontSize: 14,
+  );
+
+  static const TextStyle sectionLabel = TextStyle(
+    color: AppColors.white,
+    fontSize: 20,
+    fontWeight: FontWeight.w600,
+    letterSpacing: -0.4,
+  );
+
+  static const TextStyle supportingText = TextStyle(
+    color: AppColors.greyText3,
+    fontSize: 14,
+    height: 1.5,
+  );
 
   static const TextStyle guestButtonText = TextStyle(
     color: AppColors.guestButtonText,
     fontSize: 16,
+    fontWeight: FontWeight.w500,
   );
 
   static const TextStyle accentBlueText = TextStyle(
     color: AppColors.accentBlue,
+    fontWeight: FontWeight.w600,
   );
 
   static const TextStyle socialButtonText = TextStyle(
@@ -51,6 +80,7 @@ class AppTextStyles {
     fontSize: 16,
     color: AppColors.white,
     letterSpacing: -0.3125,
+    fontWeight: FontWeight.w500,
   );
 
   static const TextStyle hintText = TextStyle(
@@ -103,5 +133,12 @@ class AppTextStyles {
     height: 28 / 20,
     color: AppColors.white,
     letterSpacing: -0.4492,
+  );
+
+  static const TextStyle heroStat = TextStyle(
+    color: AppColors.white,
+    fontSize: 15,
+    fontWeight: FontWeight.w600,
+    letterSpacing: -0.3,
   );
 }
