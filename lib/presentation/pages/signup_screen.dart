@@ -1,5 +1,6 @@
 import 'package:stock_pilot/core/const/app_color_const.dart';
 import 'package:stock_pilot/core/const/app_text_style_const.dart';
+import 'package:stock_pilot/l10n/app_localizations.dart';
 import 'package:stock_pilot/presentation/widgets/auth/auth_divider.dart';
 import 'package:stock_pilot/presentation/widgets/auth/auth_field.dart';
 import 'package:stock_pilot/presentation/widgets/auth/auth_primary_button.dart';
@@ -11,7 +12,6 @@ import 'package:stock_pilot/presentation/widgets/google_icon.dart';
 import 'package:stock_pilot/presentation/widgets/lock_icon.dart';
 import 'package:stock_pilot/presentation/widgets/user_icon.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:go_router/go_router.dart';
 
 class SignUpScreen extends StatefulWidget {

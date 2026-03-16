@@ -9,8 +9,9 @@ import 'package:stock_pilot/presentation/widgets/auth_shell.dart';
 import 'package:stock_pilot/presentation/widgets/email_icon.dart';
 import 'package:stock_pilot/presentation/widgets/lock_icon.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:go_router/go_router.dart';
+
+import '../../l10n/app_localizations.dart';
 
 class IntroScreen extends StatelessWidget {
   const IntroScreen({super.key});
