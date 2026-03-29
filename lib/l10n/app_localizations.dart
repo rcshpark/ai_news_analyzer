@@ -107,6 +107,24 @@ abstract class AppLocalizations {
   /// **'Search companies, read key metrics, and organize your investment view faster'**
   String get introSubTitle;
 
+  /// First stat chip on the intro screen
+  ///
+  /// In en, this message translates to:
+  /// **'Company search'**
+  String get introChipCompanySearch;
+
+  /// Second stat chip on the intro screen
+  ///
+  /// In en, this message translates to:
+  /// **'Metric snapshots'**
+  String get introChipMetricSnapshots;
+
+  /// Third stat chip on the intro screen
+  ///
+  /// In en, this message translates to:
+  /// **'AI investment view'**
+  String get introChipAiInvestmentView;
+
   /// Email input label
   ///
   /// In en, this message translates to:

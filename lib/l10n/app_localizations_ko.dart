@@ -15,6 +15,15 @@ class AppLocalizationsKo extends AppLocalizations {
   String get introSubTitle => '검색한 기업의 핵심 지표와 투자 포인트를 빠르게 정리합니다';
 
   @override
+  String get introChipCompanySearch => '기업 검색';
+
+  @override
+  String get introChipMetricSnapshots => '핵심 지표 스냅샷';
+
+  @override
+  String get introChipAiInvestmentView => 'AI 투자 인사이트';
+
+  @override
   String get email => '이메일';
 
   @override

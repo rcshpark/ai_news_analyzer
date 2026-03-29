@@ -88,13 +88,13 @@ class IntroScreen extends StatelessWidget {
         const SizedBox(height: 12),
         Text(l10n.introSubTitle, style: AppTextStyles.introSubtitle),
         const SizedBox(height: 20),
-        const Wrap(
+        Wrap(
           spacing: 10,
           runSpacing: 10,
           children: [
-            AuthStatChip(label: 'Company search'),
-            AuthStatChip(label: 'Metric snapshots'),
-            AuthStatChip(label: 'AI investment view'),
+            AuthStatChip(label: l10n.introChipCompanySearch),
+            AuthStatChip(label: l10n.introChipMetricSnapshots),
+            AuthStatChip(label: l10n.introChipAiInvestmentView),
           ],
         ),
       ],

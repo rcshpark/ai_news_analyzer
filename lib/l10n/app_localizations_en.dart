@@ -15,6 +15,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get introSubTitle => 'Search companies, read key metrics, and organize your investment view faster';
 
   @override
+  String get introChipCompanySearch => 'Company search';
+
+  @override
+  String get introChipMetricSnapshots => 'Metric snapshots';
+
+  @override
+  String get introChipAiInvestmentView => 'AI investment view';
+
+  @override
   String get email => 'email';
 
   @override
