@@ -11,6 +11,21 @@
     "description": "Subtitle under the intro title"
   },
 
+  "introChipCompanySearch": "Company search",
+  "@introChipCompanySearch": {
+    "description": "First stat chip on the intro screen"
+  },
+
+  "introChipMetricSnapshots": "Metric snapshots",
+  "@introChipMetricSnapshots": {
+    "description": "Second stat chip on the intro screen"
+  },
+
+  "introChipAiInvestmentView": "AI investment view",
+  "@introChipAiInvestmentView": {
+    "description": "Third stat chip on the intro screen"
+  },
+
   "email": "email",
   "@email": {
     "description": "Email input label"

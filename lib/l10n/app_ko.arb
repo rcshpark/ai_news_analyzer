@@ -11,6 +11,21 @@
     "description": "인트로 화면 타이틀 하단에 표시되는 부제목"
   },
 
+  "introChipCompanySearch": "기업 검색",
+  "@introChipCompanySearch": {
+    "description": "인트로 화면 첫 번째 통계 칩"
+  },
+
+  "introChipMetricSnapshots": "핵심 지표 스냅샷",
+  "@introChipMetricSnapshots": {
+    "description": "인트로 화면 두 번째 통계 칩"
+  },
+
+  "introChipAiInvestmentView": "AI 투자 인사이트",
+  "@introChipAiInvestmentView": {
+    "description": "인트로 화면 세 번째 통계 칩"
+  },
+
   "email": "이메일",
   "@email": {
     "description": "이메일 입력 필드 라벨"
