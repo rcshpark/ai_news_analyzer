@@ -1,4 +1,5 @@
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:stock_pilot/core/const/app_config_const.dart';
 import 'package:stock_pilot/features/auth/data/datasources/google_auth_data_source.dart';
 import 'package:stock_pilot/features/auth/data/dto/google_identity_token_dto.dart';
 
@@ -10,7 +11,9 @@ class GoogleAuthDataSourceImpl implements GoogleAuthDataSource {
 
   @override
   Future<GoogleIdentityTokenDto> signIn() async {
-    await _googleSignIn.initialize();
+    await _googleSignIn.initialize(
+      serverClientId: AppCOnfigConst.googleClientId,
+    );
 
     final GoogleSignInAccount account = await _googleSignIn.authenticate();
 
