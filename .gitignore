@@ -46,3 +46,6 @@ app.*.map.json
 
 # Local-only project notes
 README.local.md
+
+# env 
+env/
